@@ -73,10 +73,10 @@ public class SecondActivity extends AppCompatActivity {
 
                 if (Age > MaxAge){
                     btnNext2.setVisibility(View.INVISIBLE);
-                    Toast.makeText(SecondActivity.this, "Eres mayor de la edad permitida:"+MaxAge+"edad.",Toast.LENGTH_LONG).show();
+                    Toast.makeText(SecondActivity.this, "Eres mayor de la edad permitida: "+MaxAge+" edad.",Toast.LENGTH_LONG).show();
                 }else if (Age< MinAge){
                     btnNext2.setVisibility(View.INVISIBLE);
-                    Toast.makeText(SecondActivity.this, "Eres menor de la edad permitida:"+MinAge+"edad.",Toast.LENGTH_LONG).show();
+                    Toast.makeText(SecondActivity.this, "Eres menor de la edad permitida: "+MinAge+" edad.",Toast.LENGTH_LONG).show();
                 }else {
                     btnNext2.setVisibility(View.VISIBLE);
                 }
