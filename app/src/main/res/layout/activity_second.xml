@@ -1,9 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <RadioGroup
+        android:layout_width="198dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="141dp">
+
+        <RadioButton
+            android:id="@+id/btnGreeter"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:text="saludo" />
+
+        <RadioButton
+            android:id="@+id/btnFarewell"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorAccent"
+            android:text="despedida" />
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/seekAge"
+        android:layout_width="200dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="72dp"
+        android:max="80"
+        android:progress="18"/>
+
+    <TextView
+        android:id="@+id/TextAge"
+        android:layout_width="69dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="172dp"
+        android:fontFamily="monospace"
+        android:text="18"
+        android:textSize="32dp"
+        android:layout_below="@id/seekAge"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/btnNext2"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="next step"
+        android:layout_marginBottom="11dp" />
+</RelativeLayout>
